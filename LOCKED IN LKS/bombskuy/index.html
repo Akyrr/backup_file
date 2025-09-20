@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOMBSKUY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Layar Welcome -->
+        <div id="welcome-screen" class="screen">
+            <h1>BOMBSKUY</h1>
+            <input type="text" id="username" placeholder="Enter your name">
+            <button id="play-btn" disabled>Play Game</button>
+            <button id="instruction-btn">Instructions</button>
+        </div>
+
+        <!-- Layar Pilih Level -->
+        <div id="level-screen" class="screen hidden">
+            <h2>Select Difficulty</h2>
+            <div class="level-options">
+                <button class="level-btn" data-level="easy">Easy</button>
+                <button class="level-btn" data-level="medium">Medium</button>
+                <button class="level-btn" data-level="hard">Hard</button>
+            </div>
+        </div>
+
+        <!-- Layar Countdown -->
+        <div id="countdown-screen" class="screen hidden">
+            <div id="countdown">3</div>
+        </div>
+
+        <!-- Layar Game -->
+        <div id="game-screen" class="screen hidden">
+            <div class="game-info">
+                <div>Player: <span id="player-name-display"></span></div>
+                <div>Lives: <span id="lives">3</span></div>
+                <div>Time: <span id="timer">0</span></div>
+                <div>Walls Destroyed: <span id="walls-destroyed">0</span></div>
+                <div>TNT Collected: <span id="tnt-collected">0</span></div>
+                <div>Ice Cubes: <span id="ice-cubes">0</span></div>
+            </div>
+            <div id="game-board"></div>
+        </div>
+
+        <!-- Layar Game Over -->
+        <div id="gameover-screen" class="screen hidden">
+            <h2>Game Over</h2>
+            <div>Player: <span id="gameover-name"></span></div>
+            <div>Time: <span id="gameover-time"></span> seconds</div>
+            <div>Score: <span id="gameover-score"></span></div>
+            <button id="save-score-btn">Save Score</button>
+            <button id="leaderboard-btn">Leaderboard</button>
+        </div>
+
+        <!-- Layar Leaderboard -->
+        <div id="leaderboard-screen" class="screen hidden">
+            <h2>Leaderboard</h2>
+            <div id="leaderboard-container"></div>
+            <button id="back-btn">Back</button>
+        </div>
+
+        <!-- Popup Instruksi -->
+        <div id="instruction-popup" class="popup hidden">
+            <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <h3>Game Instructions</h3>
+                <p>1. Move your character with WASD or arrow keys</p>
+                <p>2. Place bombs with SPACE key</p>
+                <p>3. Avoid dogs and bomb explosions</p>
+                <p>4. Collect items from destroyed walls</p>
+                <p>5. TNT increases bomb range</p>
+                <p>6. Ice cubes freeze you temporarily</p>
+                <p>7. Broken hearts reduce your lives</p>
+            </div>
+        </div>
+
+        <!-- Popup Pause -->
+        <div id="pause-popup" class="popup hidden">
+            <div class="popup-content">
+                <h3>Game Paused</h3>
+                <button id="continue-btn">Continue</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penggunaan Colspan dan Rowspan di HTML</title>
+    <style type="text/css">
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: separate;
+            border-spacing: 30px;}
+        table{width: 30%;}
+        th, td{text-align: center;}
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th style="background-color:green"rowspan>hijau</th>
+        <th style="background-color:red"rowspan>merah</th>
+    </tr>
+    <tr>
+        <th style="background-color:yellow">kuning</th>
+        <th style="background-color:blue">biru</th>
+    </tr>
+</table>
+</body>
+</html>

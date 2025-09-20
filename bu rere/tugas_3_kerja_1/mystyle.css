@@ -1,0 +1,175 @@
+@charset "utf-8";
+body {
+    background-color: #ecf0f1;
+    font-family: arial;
+}
+h2 {
+    color: #34495e;
+    font-weight: bold;
+    letter-spacing: .4em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.dttabel {
+    border: 1px solid #34495e;
+    border-collapse: collapse;
+    vertical-align: middle;
+}
+.dttabel td {
+    padding: 5px 5px;
+    color: #ecf;
+    background-color: #34495e;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+.dttabel th:first-child {
+    border-left: 1px solid #34495e;
+}
+.dttabel th:last-child {
+    border-right: 1px solid #34495e;
+}
+.dttabel tr:nth-child(odd) {
+    height: 25px;
+    color: #34495e;
+    background-color: #bdc3c7;
+    font-weight: 600;
+}
+.dttabel tr:nth-child(even) {
+    height: 25px;
+    color: #34495e;
+    background-color: #ecf0f1;
+}
+.dttabel td:first-child {
+    border-bottom: 1px solid #34495e;
+}
+.dttabel td:last-child {
+    border-left: 1px solid #34495e;
+}
+.dttabel td:nth-child(1) {
+    text-align: center;
+}
+.dttabel td:nth-child(2) {
+    text-align: center;
+}
+.dttabel td:nth-child(8) {
+    text-align: center;
+}
+.dttabel tbody tr:hover {
+    background: #bdc3c7;
+}
+
+a {
+    padding: 5px 15px 5px 15px;
+    background-color: #34495e;
+    text-decoration: none;
+}
+a:link {
+    color: #ecf;
+}
+a:visited {
+    color: #ecf;
+}
+a:hover {
+    color: yellow;
+}
+a:active {
+    color: yellow;
+    font-weight: 600;
+    padding: 5px 14px 5px 13px;
+}
+
+.frtabel {
+    border-spacing: 0px;
+    border-collapse: collapse;
+    vertical-align: middle;
+}
+.frtabel caption {
+    padding: 5px 5px;
+    color: #ecf;
+    background-color: #34495e;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: 600;
+    border: 1px solid #34495e;
+    margin: 1em;
+}
+.frtabel td:nth-child(1) {
+    text-align: right;
+    height: 25px;
+    color: #34495e;
+    background-color: #bdc3c7;
+    font-weight: 600;
+    padding: 3px 10px 3px 10px;
+}
+.frtabel td:nth-child(2) {
+    text-align: left;
+    height: 25px;
+    color: #34495e;
+    padding: 3px 10px 3px 10px;
+}
+.frtabel td:last-child {
+    border-bottom: 1px solid #bdc3c7;
+    border-right: 1px solid #bdc3c7;
+}
+
+.frtabel tr:nth-child(5) {
+    vertical-align: top;
+}
+
+input[type=text] {
+    border: 0px;
+    height: 25px;
+    width: 100%;
+    background-color: #ecf0f1;
+    color: #34495e;
+}
+
+input[type=date] {
+    border: 0px;
+    height: 25px;
+    width: 100%;
+    background-color: #ecf0f1;
+    color: #34495e;
+}
+
+input[type=tel] {
+    border: 0px;
+    height: 25px;
+    width: 100%;
+    background-color: #ecf0f1;
+    color: #34495e;
+}
+
+input:focus {
+    background-color: #fff;
+}
+
+textarea {
+    border: 0px;
+    height: 100px;
+    width: 100%;
+    background-color: #ecf0f1;
+    color: #34495e;
+}
+
+textarea:focus {
+    background-color: #fff;
+}
+
+input[type=submit] {
+    background-color: #34495e;
+    height: 25px;
+    width: 49%;
+    color: #ecf0f1;
+    border: 0px;
+}
+
+input[type=reset] {
+    background-color: #34495e;
+    height: 25px;
+    width: 49%;
+    color: #ecf0f1;
+    border: 0px;
+}

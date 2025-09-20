@@ -1,0 +1,88 @@
+/* * {
+    color: red;
+} */
+* {
+    background-color: rgb(255, 255, 255);
+}
+h1,h2,h4 {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    color:rgb(255, 255, 255);
+    background-color: #7c7474;
+}
+body {
+    margin-left: 10lvh;
+    margin-top: 10lvh;
+    margin-right: 10lvh;
+}
+
+.one {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: bold;
+    text-align: justify;
+    direction: ltr;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+    color: rgb(15, 59, 204);
+    margin-top: 30px;
+    padding-bottom: 10px;
+    scroll{display: block; border: 1px solid red; padding: 5px; margin: 5px;width: 300px; height: 100px; overflow: scroll;}
+}
+.two {
+    background-image: url('tugas 2 (css)/Project Wallpaper .png');
+    background-attachment: fixed;
+    white-space: pre;
+    text-align: center;
+    text-shadow: 4px 4px 8px rgb(38, 0, 255);
+    font-style: italic;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: lowercase;
+    color: lightseagreen;
+    scroll{display: block; border: 1px solid red; padding: 5px; margin: 5px;width: 300px; height: 100px; overflow: auto;}
+    
+}
+a {
+    color: mediumblue;
+}
+table {
+    background-image: url('tugas 2 (css)/Project Wallpaper .png');
+    background-size: cover;
+    background-repeat: repeat;
+    border: 2px solid #333;     
+    width: 90%;                 
+    border-collapse: collapse;    
+    margin-left: auto;
+    margin-right: auto;
+    border-style: dashed;
+}
+
+th {
+    border: 2px solid #333;   
+    border-style: dashed;   
+    padding: 16px;               
+    font-size: 1.2em;        
+    background-color: rgba(21, 168, 119, 0.8);    
+}
+td {
+    border: 2px solid #333;   
+    border-style: dashed;   
+    padding: 16px;               
+    text-align: center;        
+    background-color: rgba(15, 150, 204, 0.8);
+}
+
+.listone {
+    list-style-type: circle;
+    color: rgb(9, 58, 150);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.listtwo {
+    list-style-type: square;
+    list-style-position: outside;
+    color: rgb(9, 58, 150);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

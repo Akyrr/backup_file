@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<link rel="stylesheet" href="bimaelekstyle.css">
+
+    <!-- Inline CSS -->
+    <h3>Input nama siswa</h3>
+    <form action="">
+        <div>
+            <label for="" >nama</label><br>
+            <input type="text" name="nama" required>
+        </div>
+        <br>
+        <div>
+            <label for="">Jenis kelamin </label>
+            <input type="radio" name="gender" value="pria"> pria 
+            <input type="radio" name="gender" value="wanita"> wanita
+            <input type="radio" name="gender" value="gay"> gay
+            <input type="radio" name="gender" value="lesbi"> lesbi
+        </div>
+        <br>
+        <div>
+            <label for="">Jurusan </label><br>
+            <select name="jurusan" required>
+                <option value="rpl">RPL</option>
+                <option value="tkj">TKJ</option>
+                <option value="mt">MT</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="">Hobi</label> <br>
+            <input type="checkbox" name="hobi" value="olahraga">Olahraga <br>
+            <input type="checkbox" name="hobi" value="menggambar">Menggambar <br>
+            <input type="checkbox" name="hobi" value="membaca">Membaca <br>
+        </div>
+        <br>
+        <div>
+            <label for="">Password</label>
+            <input type="password" name="password" required>
+        </div>
+        <br>
+        <div>
+            <button type="submit" name="submit">Kirim</button>
+            <button type="reset" value="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>

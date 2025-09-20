@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Guide - Contoh Lengkap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="pt">
+    <header>
+        <h1 style="color:#36C;">CSS Guide - Contoh Lengkap</h1>
+    </header>
+
+    <div class="section">
+        <h2>1. Contoh Warna dan Background</h2>
+        
+        <h3>Inline CSS</h3>
+        <h1 style="color:#36C;">Ini contoh dari Inline CSS</h1>
+
+        <h3>Heading dan Paragraf</h3>
+        <h1>Ini adalah heading 1</h1>
+        <p>Ini adalah paragraf. Ini adalah paragraf. Ini adalah paragraf.</p>
+
+        <h3>List dengan Style</h3>
+        <ul>
+            <li><em>Teks miring dalam list</em></li>
+            <li>Item list biasa</li>
+        </ul>
+
+        <h3>Heading dengan Class</h3>
+        <h1 class="hitam">Heading 1 dengan class hitam</h1>
+        <h2>Ini adalah heading 2</h2>
+        <h3>Ini adalah heading 3</h3>
+    </div>
+
+    <div class="section">
+        <h2>2. Position dan Layout</h2>
+        <div id="content">Ini adalah konten</div>
+        <div id="footer">Ini adalah footer</div>
+        <div id="supplement">Ini adalah supplement</div>
+    </div>
+
+    <div class="section">
+        <h2>3. Unit Pengukuran CSS</h2>
+        <p class="percent">Teks dengan line-height 125%.</p>
+        <div class="cm">Div ini punya margin-bottom 2cm.</div>
+        <p class="em">Huruf dengan letter-spacing 0.7em.</p>
+        <p class="ex">Teks dengan line-height 3ex.</p>
+        <p class="in">Spasi antar kata 0.15 inchi.</p>
+        <p class="mm">Spasi antar kata 15mm.</p>
+        <p class="pc">Ukuran font 20pc (besar sekali).</p>
+        <p class="px">Padding 25px.</p>
+    </div>
+
+    <div class="section">
+        <h2>4. Gambar dan Opacity</h2>
+        <img src="https://via.placeholder.com/150" alt="Contoh opacity" style="border:3px solid red; opacity:0.4;" />
+    </div>
+
+    <div class="section">
+        <h2>5. Link States</h2>
+        <a href="#link1">Tautan berwarna hitam</a><br>
+        <a href="#link2">Klik tautan ini</a><br>
+        <a href="#link3">Arahkan mouse ke atas tautan ini</a>
+    </div>
+
+    <div class="section">
+        <h2>6. Tabel dan Border</h2>
+        
+        <h3>Tabel dengan Caption</h3>
+        <table>
+            <caption style="caption-side: top;">Judul di atas</caption>
+            <tr><td>Kolom A</td><td>Kolom B</td></tr>
+        </table>
+
+        <table>
+            <caption style="caption-side: bottom;">Judul di bawah</caption>
+            <tr><td>Kolom A</td><td>Kolom B</td></tr>
+        </table>
+
+        <h3>Empty Cells</h3>
+        <table style="empty-cells: show;">
+            <tr><td>Isi</td><td></td></tr>
+        </table>
+
+        <table style="empty-cells: hide;">
+            <tr><td>Isi</td><td></td></tr>
+        </table>
+
+        <h3>Table Layout</h3>
+        <table class="auto" border="1" width="100%">
+            <tr>
+                <td width="20%">1000000000000000000</td>
+                <td width="40%">10000000</td>
+                <td width="40%">100</td>
+            </tr>
+        </table>
+
+        <table class="fixed" border="1" width="100%">
+            <tr>
+                <td width="20%">1000000000000000000</td>
+                <td width="40%">10000000</td>
+                <td width="40%">100</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>7. Border Examples</h2>
+        
+        <p class="example1">Paragraf ini mempunyai warna garis tepi yang berbeda-beda</p>
+        <p class="example2">Paragraf ini hanya mempunyai warna hijau sebagai garis tepi</p>
+
+        <p style="border-width: 4px; border-style: none;">Paragraf ini tanpa garis tepi</p>
+        <p style="border-width: 4px; border-style: solid;">Paragraf dengan solid garis tepi</p>
+        <p style="border-width: 4px; border-style: dashed;">Paragraf dengan dashed garis tepi</p>
+        <p style="border-width: 4px; border-style: double;">Paragraf dengan double garis tepi</p>
+        <p style="border-width: 4px; border-style: groove;">Paragraf dengan groove garis tepi</p>
+        <p style="border-width: 4px; border-style: ridge;">Paragraf dengan ridge garis tepi</p>
+        <p style="border-width: 4px; border-style: inset;">Paragraf dengan inset garis tepi</p>
+        <p style="border-width: 4px; border-style: outset;">Paragraf dengan outset garis tepi</p>
+    </div>
+
+    <div class="section">
+        <h2>8. Margin dan Padding</h2>
+        
+        <div class="padding-example" style="padding: 15px;">Semua sisi memiliki padding 15px</div>
+        <div class="padding-example" style="padding: 10px 2%;">Sisi atas dan bawah memiliki padding 10px, sisi kiri dan kanan memiliki padding 2%</div>
+        
+        <div class="padding-example" style="margin: 15px;">Sesuatu saat memiliki margin 15px</div>
+        <div class="padding-example" style="margin: 10px 2px;">Sisi atas dan bawah memiliki margin 10px dan kanan kiri memiliki margin 2px</div>
+    </div>
+
+    <div class="section">
+        <h2>9. List Styles</h2>
+        
+        <ul class="circle">
+            <li>Matematika</li>
+            <li>Bahasa Indonesia</li>
+            <li>Bahasa Inggris</li>
+        </ul>
+
+        <ul class="square">
+            <li>Matematika</li>
+            <li>Bahasa Indonesia</li>
+            <li>Bahasa Inggris</li>
+        </ul>
+
+        <ol class="decimal">
+            <li>Matematika</li>
+            <li>Bahasa Indonesia</li>
+            <li>Bahasa Inggris</li>
+        </ol>
+
+        <ol class="lower-alpha">
+            <li>Matematika</li>
+            <li>Bahasa Indonesia</li>
+            <li>Bahasa Inggris</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>10. Cursor Styles</h2>
+        <p>Pindahkan cursor mouse ke tulisan dibawah ini</p>
+        <div class="cursor-auto">Auto</div>
+        <div class="cursor-crosshair">Crosshair</div>
+        <div class="cursor-default">Default</div>
+        <div class="cursor-pointer">Pointer</div>
+        <div class="cursor-move">Move</div>
+        <div class="cursor-text">Text</div>
+        <div class="cursor-help">Help</div>
+        <div class="cursor-wait">Wait</div>
+    </div>
+
+    <div class="section">
+        <h2>11. Outline Examples</h2>
+        <p class="outline-thin">Paragraf ini memiliki outline tipis berwarna merah</p>
+        <p class="outline-thick">Paragraf ini memiliki outline tebal garis putus-putus berwarna hijau tua</p>
+        <p class="outline-custom">Paragraf ini memiliki outline 5px dengan warna biru muda</p>
+    </div>
+
+    <div class="section">
+        <h2>12. Dimensions</h2>
+        <div class="dimension-box">Paragraf ini memiliki lebar 400px dan tinggi 100px</div>
+        <div class="line-height-example">Paragraf ini memiliki lebar 400px, tinggi 100px, dan tinggi antar baris 30px</div>
+    </div>
+
+    <div class="section">
+        <h2>13. Font Properties</h2>
+        
+        <p style="font-family: Georgia, Garamond, serif;">
+            Paragraf ini menggunakan font Georgia atau Garamond atau Serif.
+        </p>
+        <p style="font-style: italic;">
+            Paragraf ini menggunakan font dengan style italic.
+        </p>
+        <p style="font-variant: small-caps;">
+            Font pada paragraf ini akan diubah menjadi huruf besar kecil (small-caps).
+        </p>
+        <p style="font-weight: bold;">
+            Paragraf ini menggunakan font bold (tebal).
+        </p>
+
+        <h3>Font Size</h3>
+        <p style="font-size:20px;">Ukuran font 20px.</p>
+        <p style="font-size:small;">Ukuran font small.</p>
+        <p style="font-size:large;">Ukuran font large.</p>
+
+        <h3>Text Properties</h3>
+        <p style="color:red;">Teks ini berwarna merah</p>
+        <p style="direction:rtl;">Teks ini ditampilkan dari kanan ke kiri</p>
+        <p style="letter-spacing:5px;">Teks ini memiliki jarak 5px antar huruf</p>
+        <p style="word-spacing:5px;">Teks ini memiliki jarak 5px antar kata</p>
+    </div>
+
+    <footer style="text-align: center; margin-top: 50px; padding: 20px; background: #36C; color: white;">
+        <p>CSS Guide - Contoh Lengkap</p>
+    </footer>
+</body>
+</html>

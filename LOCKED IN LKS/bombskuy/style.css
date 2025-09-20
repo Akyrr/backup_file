@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    width: 1000px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#welcome-screen {
+    background-color: #1a1a2e;
+}
+
+#welcome-screen h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #f8bb22;
+}
+
+#username {
+    padding: 10px 15px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+#play-btn, #instruction-btn, .level-btn {
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#play-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#instruction-btn {
+    background-color: #2196F3;
+}
+
+.level-options {
+    display: flex;
+    gap: 20px;
+}
+
+.level-btn {
+    min-width: 100px;
+}
+
+.level-btn[data-level="easy"] {
+    background-color: #4CAF50;
+}
+
+.level-btn[data-level="medium"] {
+    background-color: #FFC107;
+}
+
+.level-btn[data-level="hard"] {
+    background-color: #F44336;
+}
+
+#countdown-screen {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#countdown {
+    font-size: 120px;
+    font-weight: bold;
+    color: #f8bb22;
+}
+
+#game-screen {
+    position: relative;
+    background-color: #2c3e50;
+}
+
+.game-info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#game-board {
+    width: 800px;
+    height: 500px;
+    margin: 50px auto;
+    position: relative;
+    background-color: #34495e;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.cell {
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+}
+
+.stone-wall {
+    background-color: #7f8c8d;
+    background-image: url('d:\Lks\Soal LKS Web Technologies Tingkat Prov 2025\MODULE_CLIENT_MEDIA\Images\background.jpg');
+    background-size: cover;
+}
+
+.brick-wall {
+    background-color: #d35400;
+    background-image: url('d:\Lks\Soal LKS Web Technologies Tingkat Prov 2025\MODULE_CLIENT_MEDIA\Images\wall.png');
+    background-size: cover;
+}
+
+.player {
+    background-image: url('d:\Lks\Soal LKS Web Technologies Tingkat Prov 2025\MODULE_CLIENT_MEDIA\Images\char_down.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+}
+
+.dog {
+    background-image: url('d:\Lks\Soal LKS Web Technologies Tingkat Prov 2025\MODULE_CLIENT_MEDIA\Images\dog_down.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 5;
+}
+
+.bomb {
+    background-image: url('d:\Lks\Soal LKS Web Technologies Tingkat Prov 2025\MODULE_CLIENT_MEDIA\Images\bomb.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+}
+
+.explosion {
+    background-color: #f39c12;
+    opacity: 0.7;
+    z-index: 1;
+    animation: explode 0.5s;
+}
+
+@keyframes explode {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 0.7; }
+}
+
+.item {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 3;
+}
+
+.heart-item {
+    background-image: url('d:\Lks\Soal LKS Web Technologies Tingkat Prov 2025\MODULE_CLIENT_MEDIA\Images\heart.png');
+}
+
+.tnt-item {
+    background-image: url('d:\Lks\Soal LKS Web Technologies Tingkat Prov 2025\MODULE_CLIENT_MEDIA\Images\tnt.png');
+}
+
+.ice-item {
+    background-image: url('d:\Lks\Soal LKS Web Technologies Tingkat Prov 2025\MODULE_CLIENT_MEDIA\Images\ice.png');
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.popup-content {
+    background-color: #2c3e50;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 80%;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#gameover-screen, #leaderboard-screen {
+    background-color: #1a1a2e;
+}
+
+#leaderboard-container {
+    width: 80%;
+    max-height: 400px;
+    overflow-y: auto;
+    margin: 20px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.leaderboard-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #444;
+}
+
+.leaderboard-header {
+    font-weight: bold;
+    border-bottom: 2px solid #f8bb22;
+    margin-bottom: 10px;
+}

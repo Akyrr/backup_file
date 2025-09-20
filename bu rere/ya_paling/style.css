@@ -1,0 +1,225 @@
+/* Reset dan dasar */
+body { 
+    background-color: lightblue; 
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    font-size: 18pt;
+}
+
+/* Heading dan paragraf */
+h1 { 
+    color: #36CFFF; 
+    font-weight: normal;
+    letter-spacing: normal;
+    margin-bottom: 1em;
+    text-transform: lowercase;
+}
+
+h2, h3 {
+    color: #36C;
+    font-weight: normal;
+    letter-spacing: normal;
+    margin-bottom: 1em;
+    text-transform: lowercase;
+}
+
+p { 
+    color: rgb(0,0,255); 
+    background: yellow; 
+    padding: 10px; 
+    margin: 10px 0;
+}
+
+/* List */
+ul em { color: #36CFFF; }
+ul li { color: #36CFFF; }
+
+/* Link states */
+a:link { color: black; }
+a:visited { color: green; }
+a:hover { color: orange; }
+
+/* Gambar */
+img.opacity {
+    border: 3px solid red;
+    opacity: 0.4;
+}
+
+/* Tabel umum */
+table {
+    width: 400px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+td {
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+/* Box dengan background */
+.box {
+    background-image: url('https://via.placeholder.com/150');
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+/* Unit Pengukuran CSS */
+p.percent { font-size: 16pt; line-height: 125%; }
+div.cm { margin-bottom: 2cm; background: #eef; }
+p.em { letter-spacing: 0.7em; }
+p.ex { font-size: 24pt; line-height: 3ex; }
+p.in { word-spacing: 0.15in; }
+p.mm { word-spacing: 15mm; }
+p.pc { font-size: 20pc; }
+p.px { padding: 25px; background: #ddd; }
+
+/* Position untuk div */
+#content, #footer, #supplement {
+    position: relative;
+    left: 510px;
+    width: 200px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Tabel styles */
+table.empty {
+    width: 350px; 
+    border-collapse: separate;
+    empty-cells: hide;
+}
+
+td.empty {
+    padding: 5px; 
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #999999;
+}
+
+table.auto { table-layout: auto; }
+table.fixed { table-layout: fixed; }
+
+/* Border examples */
+p.example1 {
+    border: 1px solid; 
+    border-bottom-color: #009900; 
+    border-top-color: #FF0000;
+    border-left-color: #330000; 
+    border-right-color: #0000CC;
+}
+
+p.example2 { border: 1px solid #009900; }
+
+/* List styles */
+ul.circle { list-style-type: circle; }
+ul.square { list-style-type: square; }
+ol.decimal { list-style-type: decimal; }
+ol.lower-alpha { list-style-type: lower-alpha; }
+ol.lower-roman { list-style-type: lower-roman; }
+
+/* Padding examples */
+.padding-example {
+    border: 1px solid black;
+    margin: 10px 0;
+}
+
+/* Cursor styles */
+.cursor-auto { cursor: auto; }
+.cursor-crosshair { cursor: crosshair; }
+.cursor-default { cursor: default; }
+.cursor-pointer { cursor: pointer; }
+.cursor-move { cursor: move; }
+.cursor-text { cursor: text; }
+.cursor-help { cursor: help; }
+.cursor-wait { cursor: wait; }
+
+/* Outline examples */
+.outline-thin { outline: thin solid red; }
+.outline-thick { outline: thick dashed #003300; }
+.outline-custom { outline: 5px dotted rgb(133,221,221); }
+
+/* Dimension examples */
+.dimension-box {
+    width: 400px; 
+    height: 100px; 
+    border: 1px solid red; 
+    padding: 5px;
+}
+
+.line-height-example {
+    width: 400px; 
+    height: 100px; 
+    border: 1px solid red; 
+    padding: 5px; 
+    line-height: 30px;
+}
+
+/* Heading hitam */
+h1.hitam { color: #000000; }
+
+/* Utility classes */
+.section {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.code-example {
+    background: #f4f4f4;
+    padding: 10px;
+    border-left: 4px solid #36C;
+    margin: 10px 0;
+    font-family: monospace;
+}
+
+/* Additional table styles */
+table {
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+        font-size: 16pt;
+    }
+    
+    .section {
+        margin: 10px 0;
+        padding: 10px;
+    }
+    
+    #content, #footer, #supplement {
+        left: 0;
+        width: auto;
+        margin: 10px 0;
+    }
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background: #36C;
+    color: white;
+    border-radius: 5px;
+}
